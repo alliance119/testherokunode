@@ -1,0 +1,5 @@
+{
+	"name": "testherokunode",
+	"description": "First Test heroku deploy",
+	"repository": "https://github.com/vitalii-ielakov/testherokunode.git"
+}
