@@ -4,7 +4,8 @@
   "description": "First Test heroku deploy",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"All is ok, no test specified\" && exit 0"
+    "test": "echo \"All is ok, no test specified\" && exit 0",
+    "start": "gulp default"
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,13 @@
   },
   "homepage": "https://github.com/vitalii-ielakov/testherokunode#readme",
   "dependencies": {
-    "express": "^4.14.0"
+    "express": "^4.14.0",
+    "gulp": "^3.9.1",
+    "gulp-exec": "^2.1.2",
+    "gulp-live-server": "0.0.30",
+    "gulp-rigger": "^0.5.8",
+    "gulp-uglify": "^2.0.0",
+    "jasmine": "^2.5.1",
+    "rimraf": "^2.5.4"
   }
 }
