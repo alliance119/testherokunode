@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/vitalii-ielakov/testherokunode#readme",
   "dependencies": {
+    "body-parser": "^1.15.2",
     "express": "^4.14.0",
     "gulp": "^3.9.1",
     "gulp-exec": "^2.1.2",
@@ -25,6 +26,7 @@
     "gulp-rigger": "^0.5.8",
     "gulp-uglify": "^2.0.0",
     "jasmine": "^2.5.1",
+    "pg-promise": "^5.3.4",
     "rimraf": "^2.5.4"
   }
 }
