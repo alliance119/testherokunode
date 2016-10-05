@@ -3,3 +3,7 @@ deployment:
         branch: master
         heroku:
             appname: testherokunodemy
+    prod:
+        branch: development
+        heroku:
+            appname: testherokunodemy-dev
