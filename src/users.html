@@ -1,0 +1,28 @@
+<p>Users table</p>
+<table>
+	<caption>Chess game score</caption>
+	<thead>
+		<tr>
+			<th>Id</th>
+			<th>Firstname</th>
+			<th>Lastname</th>
+			<th>Date of Birth</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr ng-repeat="user in usersList">
+			<td>{{ user.id }}</td>
+			<td>{{ user.firstname }}</td>
+			<td>{{ user.lastname }}</td>
+			<td>{{ user.birthdate | date }}</td>
+		</tr>
+	</tbody>
+</table>
+<hr>
+<label>Firstname</label>
+<input type="text" ng-model="currentUser.firstname">
+<label>Lastname</label>
+<input type="text" ng-model="currentUser.lastname">
+<label>Birthdate</label>
+<input type="text" ng-model="currentUser.birthdate">
+<button ng-click="addUser()">Add User</button>

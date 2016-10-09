@@ -9,6 +9,7 @@ app.use(bodyParser.urlencoded({
     extended: true
 }));
 app.use(express.static(__dirname + '/build'));
+app.use('/bower_components',  express.static(__dirname + '/bower_components'));
 app.use('/'+ apiPref +'/users', router_users);
 app.listen(app.get('port'), function () {
     console.log('Example app listening on port 3000!');

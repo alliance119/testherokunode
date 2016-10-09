@@ -3,14 +3,26 @@
     <head lang="ru">
         <meta charset="UTF-8">
         <title>first heroku deploy</title>
+	<base href="/">
+        <script type="text/javascript" src="/bower_components/angular/angular.min.js"></script>
+        <script type="text/javascript" src="/bower_components/angular-route/angular-route.min.js"></script>
+        <script src="app.js"></script>
         <script src="main.js"></script>
     </head>
     <body>
         //= templates/header.html
-        <main>
+        <main ng-app="testHerokuNodeApp">
             <p>Last update time</p>
             <p id="pTime"> Here is a time </p>
             <button id="btnUpdateTime">Update Time</button>
+            <ul class="nav navbar-nav">
+                <li><a href="/">Main</a></li>
+                <li><a href="users">Users</a></li>
+                <li><a href="computers">Computers</a></li>
+            </ul>
+            <hr>
+            <ng-view></ng-view>
+	    <hr>
         </main>
         //= templates/footer.html
     </body>
